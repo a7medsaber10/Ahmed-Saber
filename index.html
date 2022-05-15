@@ -4,23 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Ahmed Saber</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">Ahmed Saber</a>
-        <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <div class="left-section">
+            <!-- <i class="fas fa-bars" id="open"></i> -->
+            <div class="sidebar">
+                <div class="logo_content">
+                    <div class="side_logo">
+                        <!-- <a href="#Home" class="side_logo"><img src="pictures_home/PicsArt_22-04-27_17-43-00-495.png" alt=""><span>eFootball</span></a> -->
+                    </div>
+                    <i class="fas fa-bars" id="btn"></i>
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <a href="#profile">
+                            <i class="fas fa-user-circle" id="side"></i>
+                            <span class="links_name">Profile</span>
+                        </a>
+                        <span class="tooltip">Profile</span>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <i class="fas fa-project-diagram" id="side"></i>
+                            <span class="links_name">Projects</span>
+                        </a>
+                        <span class="tooltip">Projects</span>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <i class="fas fa-hand-holding-heart" id="side"></i>
+                            <span class="links_name">Services</span>
+                        </a>
+                        <span class="tooltip">Services</span>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <i class="fas fa-brain" id="side"></i>
+                            <span class="links_name">Skills</span>
+                        </a>
+                        <span class="tooltip">Skills</span>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <i class="fas fa-address-card" id="side"></i>
+                            <span class="links_name">About</span>
+                        </a>
+                        <span class="tooltip">About</span>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fas fa-users" id="side"></i>
+                            <span class="links_name">Contact</span>
+                        </a>
+                        <span class="tooltip">Contact</span>
+                    </li>
+                </ul>
+            </div>
+            <a href="#main" class="main_logo">Ahmed Saber</a>
+        </div>
+        <div class="right-section">
+            <nav class="navigation">
+                <a href="#main">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+</header>
 
 
-    <section class="main">
+    <section class="main" id="main">
         <div>
             <h2>Hello, I'm Ahmed Saber<br><span>Web Developer</span></h2>
             <h3>I'm a hard working learner</h3>
@@ -34,84 +95,183 @@
         </div>
     </section>
 
-
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
+    <section class="me" id="profile">
         <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-edit"></i>
-                </div>
-                <div class="info">
-                    <h3>Script Writing</h3>
-                    <p>Research and Write scripts for differnt topics</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <div class="info">
-                    <h3>Drawing</h3>
-                    <p>Draw a simple and beautiful portraits</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Programming</h3>
-                    <p>Program a simple and effective programms</p>
+            <div class="card-me">
+                <div class="card-me-content">
+                    <div class="image">
+                        <img src="images/img_contact2.jpg" alt="">
+                    </div>
+                    <div class="text-me">
+                        <div class="name">
+                            <span>Ahmed Saber</span>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/a7medsaber10/" target="_blank" title="Go to my linkedin account"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/a7medsaber.10/" target="_blank" title="Go to my instagram account"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ahmedsa2522003/" target="_blank" title="Go to my facebook account"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/A7medSaber_10" target="_blank" title="Go to my twitter account"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="desc">
+                            <p>Giving up is not an option.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="cards" id="services">
+        <div class="overlay"></div>
+            <h2 class="title">Services</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Script Writing</h3>
+                        <p>Research and Write scripts for differnt topics</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Drawing</h3>
+                        <p>Draw a simple and beautiful portraits</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Programming</h3>
+                        <p>Program a simple and effective programms</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
 
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
         <div class="content">
-            I don't Have projects at the moment, I'm still working on it
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/eFootball.png" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML, CSS and JS</p>
+                    <strong class="project-title">
+                        <span class="efootball">eFootball</span>
+                        <a href="https://teamnum48.github.io/efootballP/" target="_blank" class="more-details">More details..</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/Kasper.png" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML, CSS and JS</p>
+                    <strong class="project-title">
+                        <span class="Kasper">Kasper template</span>
+                        <a href="https://a7medsaber10.github.io/Kasper/" target="_blank" class="more-details">More details..</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/Leon.png" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML, CSS and JS</p>
+                    <strong class="project-title">
+                        <span class="Leon">Leon template</span>
+                        <a href="https://a7medsaber10.github.io/Leon/" target="_blank" class="more-details">More details..</a>
+                    </strong>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+            <h2 class="title">Let's work together</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+20 01155668978</p>
+                    </div>
                 </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+20 01155668978</p>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>ahmedsa2522003@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>ahmedsa2522003@gmail.com</p>
-                </div>
-            </div>
-        </div>
     </section>
 
 
-    <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Ahmed Saber</span></p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/a7medsaber10/" target="_blank" title="Go to my linkedin account"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/a7medsaber.10/" target="_blank" title="Go to my instagram account"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/ahmedsa2522003/" target="_blank" title="Go to my facebook account"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/A7medSaber_10" target="_blank" title="Go to my twitter account"><i class="fab fa-twitter"></i></a>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Page</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Payment options</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">returns</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">art</a></li>
+                        <li><a href="#">front-end</a></li>
+                        <li><a href="#">back-end</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <div onclick="scrollToTop()" class="scrollTop"><i class="fas fa-chevron-up"></i></div>
+
+    <script src="home.js"></script>
+
 </body>
 </html>
+
 
