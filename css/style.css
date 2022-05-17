@@ -39,7 +39,7 @@ header {
     z-index: 999;
     padding: 0 30px;
     border-top: 2px solid var(--font-color1);
-    border-left: 2px solid var(--font-color1);
+    border-bottom: 2px solid var(--font-color1);
 }
 
 
