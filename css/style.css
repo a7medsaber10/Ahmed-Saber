@@ -38,7 +38,7 @@ header {
     height: 60px;
     z-index: 999;
     padding: 0 30px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--font-color1);
 }
 
 
