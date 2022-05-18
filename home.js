@@ -15,7 +15,7 @@ let section = document.querySelector(".contain");
 let bars = document.querySelectorAll(".bars");
 
 window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop - 300) {
+  if (window.scrollY >= section.offsetTop - 100) {
     console.log("reached section");
     bars.forEach((bar) => {
       bar.style.width = bar.dataset.width;
