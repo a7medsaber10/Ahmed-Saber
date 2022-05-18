@@ -24,6 +24,7 @@ html {
 
 body {
     line-height: 1.5;
+    background-color: var(--backgr-color2);
 }
 /* ================================================================= */
 /* start header */
@@ -79,7 +80,6 @@ header .left-section a {
     opacity: 0;
     pointer-events: none;
 }
-
 .sidebar.active .logo_content .side_logo {
     opacity: 1;
     pointer-events: none;
@@ -88,7 +88,6 @@ header .left-section a {
 /* .side_logo:hover {
     color: var(--hover-color);
 }
-
 .side_logo img {
     width: 60px;
     height: 40px;
@@ -374,7 +373,7 @@ section {
     margin: 10px;
 }
 /* ======================================================================= */
-.me {
+/* .me {
     padding: 100px 200px;
     background-color: rgb(0 0 0 / 90%);
 }
@@ -384,12 +383,12 @@ section {
     background-color: var(--backgr-color2);
     border-radius: 20px;
     margin-left: 50px;
-    /* transition: var(--main-duration) ease; */
+    transition: var(--main-duration) ease;
 }
 
-/* .card-me:hover {
+.card-me:hover {
     transform: scale(1.1);
-} */
+}
 
 .card-me::before {
     content: "";
@@ -474,7 +473,134 @@ section {
     white-space: nowrap;
     font-weight: 500;
     padding: 0px 0px 0px 200px;
+} */
+/* ======================================================================= */
+.contain {
+    position: relative;
+    /* background-image: url(../images/PicsArt_09-17-11.55.06.jpg);
+    background-position: bottom left;
+    background-size: cover; */
 }
+
+.myskills .content1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.myskills .left-sk {
+    width: 50%;
+}
+
+@media (max-width:1023px){
+    .myskills .left-sk {
+        width: 50%;
+    }
+    .myskills .right-sk {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:641px){
+    .myskills .left-sk {
+        width: 100%;
+    }
+}
+
+@media (max-width:300px){
+    .myskills .left-sk {
+        width: 100%;
+    }
+}
+
+.myskills .left-sk h1 {
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+} 
+
+.myskills .left-sk p {
+    font-size: 18px;
+    color: #fff;
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+.left-sk a {
+    color: white;
+    background-color: var(--font-color1);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: var(--main-duration) ease;
+}
+
+.left-sk a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+.right-sk {
+    width: 50%;
+    color: #fff;
+    margin-left: 50px;
+    flex: 1;
+}
+
+.right-sk .line {
+    margin-bottom: 40px;
+}
+
+.right-sk .line-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-sk .progress {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: var(--hover-color);
+    border-radius: 10px;
+}
+
+.right-sk .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--font-color1);
+    border-radius: 10px;
+    transition: width 0.7s linear;
+}
+
+/* .right-sk .bars {
+    background-color: var(--hover-color);
+    height: 7px;
+    width: 100%;
+    position: relative;
+} */
+
+.right-sk .line-info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .right-sk .bars::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: var(--font-color1);
+    
+} */
+
 /* ======================================================================= */
 .projects {
     background-color: var(--backgr-color2);
