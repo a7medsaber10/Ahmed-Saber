@@ -576,7 +576,12 @@ section {
     left: 0;
     top: 0;
     height: 100%;
-    background-color: var(--font-color1);
+    background-color: #fff;
+    box-shadow: 0 0 10px var(--font-color1),
+                0 0 20px var(--font-color1),
+                0 0 40px var(--font-color1),
+                0 0 80px var(--font-color1),
+                0 0 120px var(--font-color1);  
     border-radius: 10px;
     transition: width 0.7s linear;
 }
