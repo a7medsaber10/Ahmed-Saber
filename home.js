@@ -11,7 +11,7 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 // --------------------------------
-let section = document.querySelector(".contain");
+let section = document.querySelector(".right-sk");
 let bars = document.querySelectorAll(".bars");
 
 window.onscroll = function () {

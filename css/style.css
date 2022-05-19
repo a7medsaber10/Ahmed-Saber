@@ -262,15 +262,99 @@ section {
     font-size: 2rem;
     font-weight: 500;
     color: #fff;
+    padding-top: 3rem;
 }
 
-.main h2 span {
+.main h2 .name {
+    color: #fff;
+    text-shadow: 0 0 10px var(--font-color1),
+                0 0 20px var(--font-color1),
+                0 0 40px var(--font-color1),
+                0 0 80px var(--font-color1),
+                0 0 120px var(--font-color1);
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.main h2 .job {
     display: inline-block;
     margin-top: 10px;
-    color: var(--font-color1);
+    color: #fff;
     font-size: 7rem;
     font-weight: 600;
+    padding-top: 3rem;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--font-color1);
 }
+
+.main h2 .job::before {
+    content: attr(data-text);
+    position: absolute;
+    width: fit-content;
+    height: 100px;
+    color: #fff;
+    -webkit-text-stroke: 0 var(--font-color1);
+    border-right: 5px solid var(--font-color1);
+    overflow: hidden;
+    text-shadow: 0 0 10px var(--hover-color),
+                0 0 20px var(--font-color1),
+                0 0 40px var(--hover-color),
+                0 0 80px var(--font-color1),
+                0 0 120px var(--hover-color);
+    animation: animate1 4s both infinite;
+}
+
+@keyframes animate1 {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width:1023px){
+    .main h2 .job {
+        font-size: 7rem;
+    }
+    .main h2 .job::before {
+        height: 95px;
+    }
+}
+
+@media (max-width:641px){
+    .main h2 .job {
+        font-size: 5rem;
+    }
+    .main h2 .job::before {
+        height: 75px;
+    }
+}
+
+@media (max-width:300px){
+    .main h2 .name {
+        white-space: nowrap;
+    }
+    .main h2 .job {
+        font-size: 3rem;
+    }
+    .main h2 .job::before {
+        height: 45px;
+    }
+    .main h3 {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .main .main-button {
+        font-size: 0.5px;
+        white-space: nowrap;
+        padding: 1rem 2rem;
+    }
+}
+
 
 .main h3 {
     font-size: 3.5rem;
@@ -279,6 +363,7 @@ section {
     margin-top: 10px;
     margin-bottom: 30px;
     color: #fff;
+    padding-top: 3rem;
 }
 .main .main-button {
     color: white;
@@ -290,12 +375,19 @@ section {
     padding: 2rem 5rem;
     letter-spacing: 1px;
     border-radius: 15px;
+    /* margin-top: 2rem; */
     margin-bottom: 40px;
     transition: 0.5s ease;
 }
 
 .main .main-button:hover {
-    background-color: var(--hover-color);
+    background-color: #fff;
+    box-shadow: 0 0 10px var(--hover-color),
+                0 0 10px var(--font-color1),
+                0 0 20px var(--hover-color),
+                0 0 40px var(--font-color1),
+                0 0 100px var(--hover-color);
+    color: var(--font-color1);
     transform: scale(1.1);
 
 }
@@ -581,7 +673,7 @@ section {
                 0 0 20px var(--font-color1),
                 0 0 40px var(--font-color1),
                 0 0 80px var(--font-color1),
-                0 0 120px var(--font-color1);  
+                0 0 120px var(--font-color1);
     border-radius: 10px;
     transition: width 0.7s linear;
 }
@@ -841,7 +933,7 @@ footer .container ul {
     }
 
     .navigation a {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .title {
@@ -849,26 +941,30 @@ footer .container ul {
     }
 
     section {
-        padding: 80px 20px;
+        padding: 8rem 10rem;
     }
 
     .main h2 {
-        font-size: 1em;
+        font-size: 2rem;
     }
 
     .main h3 {
-        font-size: 1.6em;
+        font-size: 2.5rem;
     }
 
-    .content {
+    /* .content {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 }
 
 @media (max-width:641px){
     body {
         font-size: 12px;
+    }
+
+    section {
+        padding: 4rem 3rem;
     }
 
     .main h2 {
@@ -885,7 +981,16 @@ footer .container ul {
 }
 
 @media (max-width:300px){
-    body {
-        font-size: 10px;
+
+    section {
+        padding: 4rem 3rem;
+    }
+
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    .main h3 {
+        font-size: 1.5rem;
     }
 }
