@@ -342,7 +342,7 @@ section {
 
 @media (max-width:641px){
     .main h2 .job {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .main h2 .job::before {
         height: 75px;
