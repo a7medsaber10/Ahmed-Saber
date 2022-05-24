@@ -294,6 +294,7 @@ section {
     font-weight: 600;
     padding-top: 3rem;
     position: relative;
+    white-space: nowrap;
     /* color: transparent; */
     text-shadow: 0 0 10px var(--hover-color),
                 0 0 20px var(--font-color1),
